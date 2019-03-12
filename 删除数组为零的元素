@@ -1,0 +1,30 @@
+package shuzu;
+
+public class Text6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] oldArr = {1,3,4,5,0,0,6,6,0,5,4,7};
+		int count = 0;
+		for(int i=0;i<oldArr.length;i++)
+		{
+			if(oldArr[i] != 0)
+				count++;
+		}
+		int[] newArr =new int[count];
+		int number = 0;
+		for(int i=0;i<oldArr.length;i++)
+		{
+			if(oldArr[i]!=0)
+			{
+				newArr[number]=oldArr[i];
+				number++;
+			}
+		}
+		for(int i=0;i<newArr.length;i++)
+		{
+			System.out.println(newArr[i]);
+		}
+	}
+
+}
